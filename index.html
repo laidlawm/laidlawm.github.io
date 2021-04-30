@@ -73,12 +73,11 @@
 								<h2>About Me</h2>
 							</header>
 
-
-                                                        <p> I am a 4th year computer science student at Oregon State University. I plan
-                                                        on graduating June 2021. My interests are in systems software engineering. More
+                                                        <p> I am a 4th year computer science student at Oregon State University. I will
+                                                        be graduating June 2021. My interests are in systems software engineering. More
                                                         specifically, I enjoy working with parallel programming models like CUDA and OpenCL.
-                                                        I've worked at First Tech Credit Union and am currently interning at Intel. In my
-                                                        current position I support performance library and compiler developers as a technical
+                                                        I've worked at First Tech Credit Union, and I am currently interning at Intel. In my
+                                                        current position, I support performance library and compiler developers as a technical
                                                         consulting engineer.</p>
 
 						</div>
@@ -91,8 +90,29 @@
 							<header>
 								<h2>Senior Project</h2>
 							</header>
-
-                                                        <p> Blah blah blah </p>
+							
+							<h3>Project Description</h3>
+							<p>Embedded HPC devices must pass a set of strict requirements to be considered viable.
+							Size, memory, storage, power consumption, and fault tolerance limitations leave little room for performance.
+							This project aims to return performance to these embedded platforms through the use of the RapidIO technology on top of a RISC-V based FPGA.
+							We are working with the company Praesum Communication's who are providing the RapidIO Core IP to use with the RISC-V FPGA.</p>
+							<p>Using the PolarFire Icicle Kit (a RISC-V based FPGA SoC) as our development board, we've managed bring up a Linux kernel configuration that supports Praesum's RapidIO IP.
+							This same kernel configuration has also been stripped down to remove unessential components.
+							The digital logic of the FPGA SoC has been programmed to implement the Praesum RapidIO Core IP.
+							We've also been able to debug the Praesum RapidIO drivers such that we can interface with the RapidIO subsystem.</p>
+							
+							<h3>My Contributions</h3>
+							<p>I was able to configure and test our Linux kernel configuration against the PolarFire Icicle Kit, ensuring its operability on the RISC-V ISA.
+							I was also able to build the RapidIO kernel modules for RISC-V and ensure that they were properly loaded onto the device.
+							Finally, I managed to debug the Praesum RapidIO IP drivers and verify that the OS could observe information on RapidIO devices.</p>
+							
+							<h3>Additional Details</h3>
+							<p>- Praesum Communications (Industry Partner) Maintians RapidIO IP for HPC applications
+							  http://www.praesum.com/
+							- RapidIO Organization: Details of RapidIO spec (not the Praesum IP though)
+							  https://www.rapidio.org/
+							- GitHub Repository: Repo containing built Linux kernel configuration and RapidIO kernel modules
+							  https://github.com/laidlawm/tachyon-II</p>
 
 						</div>
 					</section>
